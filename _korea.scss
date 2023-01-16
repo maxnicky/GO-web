@@ -1,0 +1,36 @@
+body {
+  main.korea { 
+    section{
+      padding: 1rem;
+      &.k-top {
+        p {
+          padding: 0.5rem 0;
+        }
+      }
+      &.k-bottom {
+        h3 {
+          font-size: 1.5rem;
+        }
+        div.player {
+          margin: 2rem;
+          padding: 0.5rem;
+          border: 3px solid rgba(204, 119, 7, 0.411);
+          h4 {
+            font-size: 1.5rem;
+            color: $large-themecolor;
+          }
+          h5 {
+            font-size: 1.05rem;
+            padding-bottom: 0.5rem;
+            color: $small-themecolor;
+          }
+          p {
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+    }   
+    
+    
+  }
+}

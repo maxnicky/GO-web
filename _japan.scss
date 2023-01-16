@@ -1,0 +1,45 @@
+// $large-themecolor
+// $small-themecolor
+main.jp {
+  padding: 1rem;
+  section {
+    padding: 1rem;
+    &.j-top {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        flex: 1 1 300px;
+        min-width: 40vh;
+        max-width: 60vh;
+      }
+      div.academy-inf {
+        flex: 1 1 600px;
+        padding: 2rem;
+        p {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+    &.j-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 2rem;
+      div.game-info {
+        padding: 2rem 0;
+        flex: 1 1 700px;
+        h3 {
+          font-size: 2rem;
+          color: $large-themecolor;
+        }
+        p {
+          padding: 0.5rem 0;
+        }
+      }
+      div#piechart {
+        padding: 1.2rem 0 0 1rem;
+        flex: 1 1 200px;
+        max-width: 600px;
+      }
+    }
+  }
+}

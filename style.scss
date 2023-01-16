@@ -1,0 +1,127 @@
+$large-themecolor: rgb(28, 110, 83);
+$small-themecolor: rgb(58, 131, 107);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DFKai-sb, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+/* header */
+input#menu-control {
+  position: absolute;
+  display: none;
+}
+header {
+  .top {
+    background-image: url("images/background.png");
+    padding: 1rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+  nav {
+    display: flex;
+    position: relative;
+    background-color: black;
+    label.menu-btn {
+      position: absolute;
+      display: none;
+      width: 2rem;
+      height: 2rem;
+      align-self: center;
+      /* background-color: #fff; */
+      right: 0;
+      margin-right: 2rem;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        margin: auto;
+        border-radius: 2px;
+        background: #ffffff;
+        box-shadow: 0 0.7rem 0 #ffffff, 0 -0.7rem 0 #ffffff;
+      }
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        padding: 0.8rem 1.2rem;
+        /* inline的padding上下不會推開，左右正常起作用 */
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.25rem;
+          transition: 0.3s color;
+          &.active {
+            color: #ffff00;
+          }
+          &:hover {
+            color: #ffff00;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 699px) {
+  header {
+    nav {
+      height: 3rem;
+      label.menu-btn {
+        display: block;
+      }
+      ul {
+        position: absolute;
+        left: -100%;
+        display: block;
+        height: 40rem;
+        box-shadow: 6px 0  6px -6px black;
+        background-color: black;
+        transition: 0.5s;
+        li {
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+  input#menu-control:checked + header nav ul {
+    left: 0;
+  }
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  &.no-flex {
+    display: block;
+  }  
+}
+/* index.html */
+@import "index";
+
+// korea.html
+@import "korea";
+
+// japan.html
+@import "japan";
+
+// china.html
+@import "china";
+
+// taiwan.html
+@import "taiwan";

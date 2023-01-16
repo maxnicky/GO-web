@@ -1,0 +1,34 @@
+// $large-themecolor
+// $small-themecolor
+body {
+  main.china {
+    section {
+      padding: 1rem;
+      h3 {
+        font-size: 2rem;
+        color: $large-themecolor;
+      }
+      p {
+        padding: 0.5rem 0;
+      }
+      div {
+        overflow-x: auto;
+        table {
+          min-width: 1000px;
+          tr {
+            th {
+              padding: 0.1rem 0;
+              background-color: rgb(41, 214, 185);
+              color: #fff;
+            }
+            td {
+              padding-top: 0.2rem;
+              padding-right: 2rem;
+              padding-left: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
